@@ -1,11 +1,13 @@
 from sqlalchemy import Column, String, Boolean, Integer, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
+from sqlalchemy.ext.asyncio import AsyncAttrs
+from database import Base
 
-Base = declarative_base()
 
-class User(Base):
+class User(AsyncAttrs, Base):
     __tablename__ = "users"
+
     id = Column(Integer, primary_key=True, autoincrement=True)
     email = Column(String, unique=True, nullable=False, index=True)
     password = Column(String, nullable=False)
@@ -13,7 +15,7 @@ class User(Base):
     is_active = Column(Boolean, default=False)  # ✅ Tracks whether the user has activated their account
     activation_code = Column(String, nullable=True)
 
-class Resume(Base):
+class Resume(AsyncAttrs, Base):
     __tablename__ = "resumes"
     id = Column(Integer, primary_key=True, autoincrement=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
@@ -25,7 +27,7 @@ class Resume(Base):
 
     user = relationship("User", back_populates="resumes")
 
-class CoverLetter(Base):
+class CoverLetter(AsyncAttrs, Base):
     __tablename__ = "cover_letters"
     id = Column(Integer, primary_key=True, autoincrement=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)

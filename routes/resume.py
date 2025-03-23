@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy.orm import Session
-from openai import OpenAI
+from sqlalchemy.ext.asyncio import AsyncSession
+from openai import AsyncOpenAI
 from auth import get_current_user
 from database import get_db
 from models import Resume
@@ -9,18 +9,18 @@ from config import OPENAI_API_KEY
 router = APIRouter()
 
 @router.post("/")
-def generate_resume(
+async def generate_resume(
     full_name: str,
     experience: str,
     skills: str,
     job_title: str,
     job_description: str,
-    db: Session = Depends(get_db),
+    db: AsyncSession = Depends(get_db),
     user: dict = Depends(get_current_user),
 ):
     """Generates a resume using OpenAI API based on user input."""
 
-    client = OpenAI(
+    client = AsyncOpenAI(
         api_key=OPENAI_API_KEY
     )
 
@@ -32,7 +32,7 @@ def generate_resume(
     """
 
     try:
-        response = client.chat.completions.create(
+        response = await client.chat.completions.create(
             model="gpt-4o-mini",
             store=True,
             messages=[
@@ -44,7 +44,7 @@ def generate_resume(
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"OpenAI API error: {str(e)}")
 
-    # Save the generated resume to the database
+    # Save the generated resume to the database asynchronously
     new_resume = Resume(
         user_id=user["id"],
         full_name=full_name,
@@ -54,7 +54,8 @@ def generate_resume(
         job_description=job_description
     )
     db.add(new_resume)
-    db.commit()
+    await db.commit()
+    await db.refresh(new_resume)
 
     print(resume_text.content)
     return {"resume": resume_text.content}

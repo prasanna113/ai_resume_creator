@@ -9,3 +9,4 @@ passlib
 asyncpg
 alembic
 psycopg2-binary
+greenlet

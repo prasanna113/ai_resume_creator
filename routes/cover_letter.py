@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy.orm import Session
-from openai import OpenAI
+from sqlalchemy.ext.asyncio import AsyncSession
+from openai import AsyncOpenAI
 from auth import get_current_user
 from database import get_db
 from models import CoverLetter
@@ -9,17 +9,17 @@ from config import OPENAI_API_KEY
 router = APIRouter()
 
 @router.post("/")
-def generate_cover_letter(
+async def generate_cover_letter(
     full_name: str,
     experience: str,
     job_title: str,
     job_description: str,
-    db: Session = Depends(get_db),
+    db: AsyncSession = Depends(get_db),
     user: dict = Depends(get_current_user),
 ):
     """Generates a cover letter using OpenAI API based on user input."""
 
-    client = OpenAI(
+    client = AsyncOpenAI(
         api_key=OPENAI_API_KEY
     )
 
@@ -30,7 +30,7 @@ def generate_cover_letter(
     """
 
     try:
-        response = client.chat.completions.create(
+        response = await client.chat.completions.create(
             model="gpt-4o-mini",
             store=True,
             messages=[
@@ -42,7 +42,7 @@ def generate_cover_letter(
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"OpenAI API error: {str(e)}")
 
-    # Save the generated cover letter to the database
+    # Save the generated cover letter to the database asynchronously
     new_cover_letter = CoverLetter(
         user_id=user["id"],
         full_name=full_name,
@@ -51,6 +51,7 @@ def generate_cover_letter(
         job_description=job_description
     )
     db.add(new_cover_letter)
-    db.commit()
+    await db.commit()
+    await db.refresh(new_cover_letter)
 
     return {"cover_letter": cover_letter_text.content}
