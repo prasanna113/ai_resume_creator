@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		67C2C7042D8C661F00CC6903 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67C2C6EB2D8C661B00CC6903 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67C2C6F22D8C661B00CC6903;
+			remoteInfo = AIResumeApp;
+		};
+		67C2C70E2D8C661F00CC6903 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67C2C6EB2D8C661B00CC6903 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67C2C6F22D8C661B00CC6903;
+			remoteInfo = AIResumeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67C2C6F32D8C661B00CC6903 /* AI Resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI Resume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C2C7032D8C661F00CC6903 /* AI ResumeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI ResumeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C2C70D2D8C661F00CC6903 /* AI ResumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI ResumeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		67C2C7312D8D052700CC6903 /* Exceptions for "AIResumeApp" folder in "AI Resume" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 67C2C6F22D8C661B00CC6903 /* AI Resume */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		67C2C6F52D8C661B00CC6903 /* AIResumeApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				67C2C7312D8D052700CC6903 /* Exceptions for "AIResumeApp" folder in "AI Resume" target */,
+			);
+			path = AIResumeApp;
+			sourceTree = "<group>";
+		};
+		67C2C7062D8C661F00CC6903 /* AIResumeAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AIResumeAppTests;
+			sourceTree = "<group>";
+		};
+		67C2C7102D8C661F00CC6903 /* AIResumeAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AIResumeAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67C2C6F02D8C661B00CC6903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C2C7002D8C661F00CC6903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C2C70A2D8C661F00CC6903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67C2C6EA2D8C661B00CC6903 = {
+			isa = PBXGroup;
+			children = (
+				67C2C6F52D8C661B00CC6903 /* AIResumeApp */,
+				67C2C7062D8C661F00CC6903 /* AIResumeAppTests */,
+				67C2C7102D8C661F00CC6903 /* AIResumeAppUITests */,
+				67C2C6F42D8C661B00CC6903 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67C2C6F42D8C661B00CC6903 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67C2C6F32D8C661B00CC6903 /* AI Resume.app */,
+				67C2C7032D8C661F00CC6903 /* AI ResumeTests.xctest */,
+				67C2C70D2D8C661F00CC6903 /* AI ResumeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67C2C6F22D8C661B00CC6903 /* AI Resume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C2C7172D8C661F00CC6903 /* Build configuration list for PBXNativeTarget "AI Resume" */;
+			buildPhases = (
+				67C2C6EF2D8C661B00CC6903 /* Sources */,
+				67C2C6F02D8C661B00CC6903 /* Frameworks */,
+				67C2C6F12D8C661B00CC6903 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				67C2C6F52D8C661B00CC6903 /* AIResumeApp */,
+			);
+			name = "AI Resume";
+			packageProductDependencies = (
+			);
+			productName = AIResumeApp;
+			productReference = 67C2C6F32D8C661B00CC6903 /* AI Resume.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67C2C7022D8C661F00CC6903 /* AI ResumeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C2C71A2D8C661F00CC6903 /* Build configuration list for PBXNativeTarget "AI ResumeTests" */;
+			buildPhases = (
+				67C2C6FF2D8C661F00CC6903 /* Sources */,
+				67C2C7002D8C661F00CC6903 /* Frameworks */,
+				67C2C7012D8C661F00CC6903 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67C2C7052D8C661F00CC6903 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				67C2C7062D8C661F00CC6903 /* AIResumeAppTests */,
+			);
+			name = "AI ResumeTests";
+			packageProductDependencies = (
+			);
+			productName = AIResumeAppTests;
+			productReference = 67C2C7032D8C661F00CC6903 /* AI ResumeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		67C2C70C2D8C661F00CC6903 /* AI ResumeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C2C71D2D8C661F00CC6903 /* Build configuration list for PBXNativeTarget "AI ResumeUITests" */;
+			buildPhases = (
+				67C2C7092D8C661F00CC6903 /* Sources */,
+				67C2C70A2D8C661F00CC6903 /* Frameworks */,
+				67C2C70B2D8C661F00CC6903 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67C2C70F2D8C661F00CC6903 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				67C2C7102D8C661F00CC6903 /* AIResumeAppUITests */,
+			);
+			name = "AI ResumeUITests";
+			packageProductDependencies = (
+			);
+			productName = AIResumeAppUITests;
+			productReference = 67C2C70D2D8C661F00CC6903 /* AI ResumeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67C2C6EB2D8C661B00CC6903 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					67C2C6F22D8C661B00CC6903 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					67C2C7022D8C661F00CC6903 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 67C2C6F22D8C661B00CC6903;
+					};
+					67C2C70C2D8C661F00CC6903 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 67C2C6F22D8C661B00CC6903;
+					};
+				};
+			};
+			buildConfigurationList = 67C2C6EE2D8C661B00CC6903 /* Build configuration list for PBXProject "AI Resume" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67C2C6EA2D8C661B00CC6903;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 67C2C6F42D8C661B00CC6903 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67C2C6F22D8C661B00CC6903 /* AI Resume */,
+				67C2C7022D8C661F00CC6903 /* AI ResumeTests */,
+				67C2C70C2D8C661F00CC6903 /* AI ResumeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67C2C6F12D8C661B00CC6903 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C2C7012D8C661F00CC6903 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C2C70B2D8C661F00CC6903 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67C2C6EF2D8C661B00CC6903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C2C6FF2D8C661F00CC6903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C2C7092D8C661F00CC6903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67C2C7052D8C661F00CC6903 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67C2C6F22D8C661B00CC6903 /* AI Resume */;
+			targetProxy = 67C2C7042D8C661F00CC6903 /* PBXContainerItemProxy */;
+		};
+		67C2C70F2D8C661F00CC6903 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67C2C6F22D8C661B00CC6903 /* AI Resume */;
+			targetProxy = 67C2C70E2D8C661F00CC6903 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		67C2C7152D8C661F00CC6903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67C2C7162D8C661F00CC6903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67C2C7182D8C661F00CC6903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AIResumeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 5AUZFU65W6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AIResumeApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prasannadeshmukh.AIResumeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67C2C7192D8C661F00CC6903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AIResumeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 5AUZFU65W6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AIResumeApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prasannadeshmukh.AIResumeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		67C2C71B2D8C661F00CC6903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prasannadeshmukh.AIResumeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AI Resume.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AI Resume";
+			};
+			name = Debug;
+		};
+		67C2C71C2D8C661F00CC6903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prasannadeshmukh.AIResumeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AI Resume.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AI Resume";
+			};
+			name = Release;
+		};
+		67C2C71E2D8C661F00CC6903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prasannadeshmukh.AIResumeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AIResumeApp;
+			};
+			name = Debug;
+		};
+		67C2C71F2D8C661F00CC6903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prasannadeshmukh.AIResumeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AIResumeApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67C2C6EE2D8C661B00CC6903 /* Build configuration list for PBXProject "AI Resume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C2C7152D8C661F00CC6903 /* Debug */,
+				67C2C7162D8C661F00CC6903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67C2C7172D8C661F00CC6903 /* Build configuration list for PBXNativeTarget "AI Resume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C2C7182D8C661F00CC6903 /* Debug */,
+				67C2C7192D8C661F00CC6903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67C2C71A2D8C661F00CC6903 /* Build configuration list for PBXNativeTarget "AI ResumeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C2C71B2D8C661F00CC6903 /* Debug */,
+				67C2C71C2D8C661F00CC6903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67C2C71D2D8C661F00CC6903 /* Build configuration list for PBXNativeTarget "AI ResumeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C2C71E2D8C661F00CC6903 /* Debug */,
+				67C2C71F2D8C661F00CC6903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67C2C6EB2D8C661B00CC6903 /* Project object */;
+}
