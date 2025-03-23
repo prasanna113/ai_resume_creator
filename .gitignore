@@ -1,3 +1,5 @@
 .idea/
 to_del.py
-
+venv/
+__pycache__
+*/__pycache__
