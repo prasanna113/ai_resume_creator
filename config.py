@@ -11,7 +11,7 @@ POSTGRE_PASSWORD = os.getenv("POSTGRE_PASSWORD")
 DATABASE_URL = os.getenv("DATABASE_URL", f"postgresql://postgres:{POSTGRE_PASSWORD}@localhost:1520/ai_resume_db")
 
 # JWT configuration
-JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", 'a5282bbcfd35a93fe40825f82f4c6db1ea02644d7cf9943b05dbc9b698b633be')
+JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 JWT_ALGORITHM = "HS256"
 
 # OpenAI API configuration
